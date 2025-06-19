@@ -27,6 +27,10 @@
             $messageNums && Array.from($messageNums).forEach(($messageButton) => {
                 $messageButton.style.opacity = 0;
             })
+            var $dynamicNums = $messageButton.getElementsByClassName('red-num--dynamic');
+            $dynamicNums && Array.from($dynamicNums).forEach(($dynamicNum) => {
+                $dynamicNum.style.opacity = 0;
+            })
             console.log('Bilibili Hidden Message: Message hidden success!')
         }
         var observer = new MutationObserver(callback);
